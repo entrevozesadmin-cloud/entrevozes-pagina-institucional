@@ -507,6 +507,9 @@ a:focus-visible {
     right:-10%;
     opacity:.67
   }
+  .hero-art .art-caption {
+    right:100px
+  }
   .section-pad {
     padding-left:9%;
     padding-right:9%
