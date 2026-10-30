@@ -9,7 +9,6 @@ const defaultMessage = "Olá! Conheci a EntreVozes e gostaria de saber mais sobr
 const links = document.querySelectorAll("[data-whatsapp]");
 const status = document.querySelector(".whatsapp-status");
 const spotifyLink = document.querySelector("[data-spotify]");
-const spotifyStatus = document.querySelector(".spotify-status");
 
 for (const link of links) {
   const message = link.classList.contains("button-gold")
@@ -40,9 +39,9 @@ if (SPOTIFY_URL.trim()) {
       spotifyLink.removeAttribute("aria-disabled");
       spotifyLink.removeAttribute("tabindex");
     } else {
-      spotifyStatus.textContent = "O link público do Spotify ainda não está disponível.";
+      ;
     }
   } catch {
-    spotifyStatus.textContent = "O link público do Spotify ainda não está disponível.";
+    /* Link inválido, botão permanece inativo. */;
   }
 }
