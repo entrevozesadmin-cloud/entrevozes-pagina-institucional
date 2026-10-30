@@ -1,6 +1,6 @@
 /* CONFIGURAÇÃO ÚNICA: informe o WhatsApp com código do país e DDD, somente números.
    Exemplo de formato: 5511999999999 (substitua pelo número real da responsável). */
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "17981818888";
 
 /* CONFIGURAÇÃO ÚNICA: cole aqui o endereço público confirmado da EntreVozes no Spotify. */
 const SPOTIFY_URL = "";
