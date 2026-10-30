@@ -895,6 +895,10 @@ a.button-spotify[aria-disabled="true"] {
   opacity:.68
 }
 @media(max-width:900px) {
+  .topbar nav {
+    gap:18px;
+    font-size:11px
+  }
   .topics,.guests {
     padding-left:9%;
     padding-right:9%
