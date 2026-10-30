@@ -5,7 +5,7 @@ Página institucional do projeto EntreVozes: uma iniciativa independente para ap
 ## Como funciona
 
 - Página estática, criada com HTML, CSS e JavaScript puros.
-- Não hospeda nem reproduz episódios. Os conteúdos em áudio serão publicados exclusivamente no Spotify.
+- Não hospeda nem reproduz episódios. O Spotify é a plataforma exclusiva de publicação dos episódios em áudio.
 - Não possui login, cadastro, banco de dados, painel ou formulário.
 - Não exige instalação de dependências nem serviços pagos.
 
@@ -17,7 +17,7 @@ Página institucional do projeto EntreVozes: uma iniciativa independente para ap
 
 ## Configurações
 
-No início do arquivo script.js, configure WHATSAPP_NUMBER com o telefone da responsável (código do país e DDD, apenas números) e SPOTIFY_URL com o endereço oficial do perfil. Enquanto os campos estiverem vazios, os botões informam que os links ainda não estão disponíveis.
+No arquivo script.js, WHATSAPP_NUMBER define o contato institucional e SPOTIFY_URL define o perfil oficial do Spotify. Com um endereço válido configurado, o botão direciona ao perfil. Sem ele, permanece visualmente inativo e não redireciona.
 
 ## Publicação e custos
 
