@@ -1,4 +1,4 @@
-# ENTREVOZES — Página Institucional
+# ENTREVOZES | Página Institucional
 
 Página institucional do projeto EntreVozes: uma iniciativa independente para aproximar conhecimentos psicológicos da sociedade.
 
@@ -11,7 +11,7 @@ Página institucional do projeto EntreVozes: uma iniciativa independente para ap
 
 ## Identificação oficial
 
-- Projeto: **ENTREVOZES — Página Institucional**
+- Projeto: **ENTREVOZES | Página Institucional**
 - Repositório: [entrevozes-pagina-institucional](https://github.com/entrevozesadmin-cloud/entrevozes-pagina-institucional)
 - Preview GitHub Pages: [entrevozesadmin-cloud.github.io/entrevozes-pagina-institucional](https://entrevozesadmin-cloud.github.io/entrevozes-pagina-institucional/)
 
