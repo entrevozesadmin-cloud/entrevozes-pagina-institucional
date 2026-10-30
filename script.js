@@ -2,8 +2,8 @@
    Exemplo de formato: 5511999999999 (substitua pelo número real da responsável). */
 const WHATSAPP_NUMBER = "";
 
-/* CONFIGURAÇÃO ÚNICA: cole aqui o endereço oficial do perfil EntreVozes no Spotify. */
-const SPOTIFY_PROFILE_URL = "";
+/* CONFIGURAÇÃO ÚNICA: cole aqui o endereço público confirmado da EntreVozes no Spotify. */
+const SPOTIFY_URL = "";
 
 const defaultMessage = "Olá! Conheci a EntreVozes e gostaria de saber mais sobre a possibilidade de participar do projeto.";
 const links = document.querySelectorAll("[data-whatsapp]");
@@ -30,23 +30,19 @@ for (const link of links) {
   }
 }
 
-if (SPOTIFY_PROFILE_URL.trim()) {
+if (SPOTIFY_URL.trim()) {
   try {
-    const spotifyUrl = new URL(SPOTIFY_PROFILE_URL);
+    const spotifyUrl = new URL(SPOTIFY_URL);
     if (spotifyUrl.protocol === "https:" && spotifyUrl.hostname === "open.spotify.com") {
       spotifyLink.href = spotifyUrl.href;
       spotifyLink.target = "_blank";
       spotifyLink.rel = "noopener noreferrer";
+      spotifyLink.removeAttribute("aria-disabled");
+      spotifyLink.removeAttribute("tabindex");
     } else {
-      spotifyStatus.textContent = "Configure um endereço https://open.spotify.com válido em script.js.";
+      spotifyStatus.textContent = "O link público do Spotify ainda não está disponível.";
     }
   } catch {
-    spotifyStatus.textContent = "Configure um endereço https://open.spotify.com válido em script.js.";
+    spotifyStatus.textContent = "O link público do Spotify ainda não está disponível.";
   }
-} else {
-  spotifyLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    spotifyStatus.textContent = "O link do Spotify ainda não está configurado. Insira o endereço oficial em script.js para ativar este botão.";
-    spotifyStatus.scrollIntoView({ behavior: "smooth", block: "center" });
-  });
 }
