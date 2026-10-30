@@ -6,8 +6,8 @@
   --muted:#aaa99f;
   --gold:#c9ad7a;
   --line:#393a35;
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:'DM Sans',Arial,sans-serif
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',Arial,sans-serif
 }
 * {
   box-sizing:border-box
