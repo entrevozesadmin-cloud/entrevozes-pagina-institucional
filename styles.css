@@ -245,6 +245,20 @@ a.button-spotify[aria-disabled="true"] { cursor: not-allowed; opacity: .68; }
 .collab-layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); gap: clamp(48px, 8vw, 120px); align-items: center; margin-top: 44px; }
 .collab-body { max-width: 520px; color: #bcbcb4; font-size: 14px; line-height: 1.85; }
 .collab-decoration { position: absolute; right: 6%; bottom: -120px; color: rgba(255,255,255,.018); font: 330px var(--serif); letter-spacing: -.1em; }
+.team-contact { padding-top: 78px; padding-bottom: 82px; border-top: 1px solid var(--line); background: var(--panel); }
+.team-contact-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(28px, 7vw, 100px); align-items: center; max-width: 1180px; margin: 0 auto; }
+.team-contact-copy { max-width: 700px; }
+.team-contact h2 { max-width: 22ch; margin: 0 0 16px; font-size: clamp(36px, 3.6vw, 48px); }
+.team-contact-copy > p { max-width: 650px; margin: 0; color: #bcbcb4; font-size: 14px; line-height: 1.8; }
+.team-contact-copy > .team-contact-handle { margin-top: 18px; }
+.team-contact-handle a { color: var(--gold); border-bottom: 1px solid rgba(201,173,122,.35); transition: border-color .2s ease; }
+.team-contact-handle a:hover { border-color: var(--gold); }
+.instagram-button { display: inline-flex; min-height: 54px; align-items: center; gap: 14px; padding: 14px 18px; border: 1px solid var(--line); color: var(--text); font-size: 10px; font-weight: 600; letter-spacing: .12em; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.instagram-button svg { width: 18px; height: 18px; flex: 0 0 auto; fill: none; stroke: var(--gold); stroke-width: 1.6; }
+.instagram-button .instagram-icon-dot { fill: var(--gold); stroke: none; }
+.instagram-arrow { color: var(--gold); font-size: 16px; }
+.instagram-button:hover { transform: translateY(-2px); border-color: var(--gold); background: rgba(201,173,122,.08); }
+.instagram-button:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 .contact { overflow: hidden; padding-top: 112px; padding-bottom: 116px; border-top: 1px solid var(--line); text-align: center; }
 .contact-inner { position: relative; z-index: 1; }
 .contact .eyebrow { justify-content: center; }
@@ -373,6 +387,11 @@ footer p { margin: 0; color: #aaa99f; font-size: 10px; }
   .professional-list li:nth-child(even) { padding-left: 0; border-left: 0; }
   .guests-layout { gap: 16px; }
   .collab-layout { gap: 15px; }
+  .team-contact { padding-top: 66px; padding-bottom: 70px; }
+  .team-contact-inner { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .team-contact h2 { max-width: 18ch; font-size: clamp(34px, 8.5vw, 44px); }
+  .team-contact-copy > p { font-size: 14px; }
+  .instagram-button { min-height: 52px; }
   .button { min-height: 52px; gap: 24px; padding: 15px 18px; }
   .collab-decoration { right: -2%; bottom: -68px; font-size: 220px; }
   .contact { padding-top: 78px; padding-bottom: 82px; }
