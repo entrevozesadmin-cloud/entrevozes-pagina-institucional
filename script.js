@@ -3,7 +3,7 @@
 const WHATSAPP_NUMBER = "17981818888";
 
 /* CONFIGURAÇÃO ÚNICA: cole aqui o endereço público confirmado da EntreVozes no Spotify. */
-const SPOTIFY_URL = "";
+const SPOTIFY_URL = "https://open.spotify.com/show/1ffBfk5V3dctFpZfaMDnMV?si=f9586903a48e424d";
 
 const defaultMessage = "Olá! Conheci a EntreVozes e gostaria de saber mais sobre a possibilidade de participar do projeto.";
 const links = document.querySelectorAll("[data-whatsapp]");
