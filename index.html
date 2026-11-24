@@ -9,37 +9,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261123-redesign">
+  <link rel="stylesheet" href="styles.css?v=20261123-coordinator-layout">
   <script src="script.js?v=20261030-final" defer></script>
 </head>
 <body>
   <header class="topbar">
     <a class="wordmark" href="#inicio" aria-label="EntreVozes, início"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>ENTRE<span>VOZES</span></a>
-      <nav aria-label="Navegação principal">
-      <a href="#sobre">O projeto</a><a href="#temas">Temas</a><a href="#onde-ouvir">Onde ouvir</a><a href="#psicologos">Colabore</a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">O projeto</a>
+      <a href="#temas">Temas</a>
+      <a href="#onde-ouvir">Onde ouvir</a>
+      <a href="#coordenacao">Idealizadora</a>
+      <a href="#convidados">Nossa equipe</a>
+      <a href="#psicologos">Colabore</a>
+      <a href="#contato">Contato</a>
     </nav>
     <a class="nav-contact" data-whatsapp href="#contato">Fale conosco <span aria-hidden="true">↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <img class="hero-photo" src="assets/editorial/hero-room.jpg" alt="" aria-hidden="true" fetchpriority="high" width="900" height="2048">
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-text">
         <p class="eyebrow">PSICOLOGIA, ESCUTA E EXPERIÊNCIA HUMANA</p>
         <h1>Nem tudo o que sentimos conseguimos explicar. <em>Mas podemos aprender a compreender.</em></h1>
         <p class="hero-copy">Conversas que aproximam o conhecimento psicológico das perguntas que atravessam a vida cotidiana.</p>
-        <a class="text-link" href="#temas">Explore os temas <span>↓</span></a>
+        <a class="hero-cta" href="#temas">Explore os temas <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <div class="soundwave"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="soundwave"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
         <div class="art-caption">ESCUTAR<br><span>também é cuidar</span></div>
-        <span class="art-star">✳</span>
       </div>
       <div class="hero-foot"><span>PSICOLOGIA · CONHECIMENTO · HUMANIDADE</span><span>ENTREVOZES</span></div>
     </section>
 
     <section class="intro section-pad" id="sobre">
-      <div class="section-label"><span>01</span><span>O PROJETO</span></div>
+      <div class="section-label"><span>O PROJETO</span></div>
       <div class="intro-content">
         <h2>Uma escuta atenta também começa <em>com boas perguntas.</em></h2>
         <div class="intro-body">
@@ -52,96 +59,105 @@
     </section>
 
     <section class="topics section-pad" id="temas">
-      <div class="section-label"><span>02</span><span>PERGUNTAS QUE NOS MOVEM</span></div>
+      <div class="section-label"><span>PERGUNTAS QUE NOS MOVEM</span></div>
       <div class="topics-heading">
         <h2>O que se passa <em>entre o que sentimos</em> e o que conseguimos dizer?</h2>
         <p>A EntreVozes aborda questões presentes na vida cotidiana com cuidado, curiosidade e apoio do conhecimento psicológico.</p>
       </div>
       <div class="topic-grid">
-        <article class="topic-card"><span>01 / EMOÇÕES</span><h3>O que nossas emoções tentam nos comunicar?</h3><p>Reconhecer o que sentimos pode mudar a forma como atravessamos uma situação.</p></article>
-        <article class="topic-card"><span>02 / RELACIONAMENTOS</span><h3>O que nos aproxima e o que nos distancia?</h3><p>Vínculos, limites e comunicação também contam histórias sobre nós.</p></article>
-        <article class="topic-card"><span>03 / COMPORTAMENTO</span><h3>Por que alguns padrões parecem se repetir?</h3><p>Observar escolhas e hábitos abre espaço para novas perguntas e perspectivas.</p></article>
-        <article class="topic-card"><span>04 / EXPERIÊNCIAS HUMANAS</span><h3>O que ajuda a dar sentido ao que vivemos?</h3><p>As experiências ganham significados diferentes ao longo da vida e nas relações.</p></article>
+        <article class="topic-card">
+          <img src="assets/editorial/theme-emotions.jpg" alt="Flores claras entre folhagens em sombra" loading="lazy" width="900" height="1350">
+          <div class="topic-content"><span>EMOÇÕES</span><h3>O que nossas emoções tentam nos comunicar?</h3><p>Reconhecer o que sentimos pode mudar a forma como atravessamos uma situação.</p></div>
+        </article>
+        <article class="topic-card">
+          <img src="assets/editorial/theme-relationships.jpg" alt="Duas pessoas em silhueta, lado a lado" loading="lazy" width="900" height="1350">
+          <div class="topic-content"><span>RELACIONAMENTOS</span><h3>O que nos aproxima e o que nos distancia?</h3><p>Vínculos, limites e comunicação também contam histórias sobre nós.</p></div>
+        </article>
+        <article class="topic-card">
+          <img src="assets/editorial/theme-behavior.jpg" alt="Perfil em luz e sombra" loading="lazy" width="900" height="1350">
+          <div class="topic-content"><span>COMPORTAMENTO</span><h3>Por que alguns padrões parecem se repetir?</h3><p>Observar escolhas e hábitos abre espaço para novas perguntas e perspectivas.</p></div>
+        </article>
+        <article class="topic-card">
+          <img src="assets/editorial/theme-experiences.jpg" alt="Mãos que se acolhem com delicadeza" loading="lazy" width="900" height="1350">
+          <div class="topic-content"><span>EXPERIÊNCIAS HUMANAS</span><h3>O que ajuda a dar sentido ao que vivemos?</h3><p>As experiências ganham significados diferentes ao longo da vida e nas relações.</p></div>
+        </article>
       </div>
-      
     </section>
 
-    <section class="listen-spotify section-pad" id="onde-ouvir">
-      <div class="spotify-copy">
-        <div class="section-label"><span>03</span><span>NOS ACOMPANHE</span></div>
-        <h2>Acompanhe a EntreVozes <em>no Spotify.</em></h2>
-        <p>O Spotify é um dos canais de publicação e divulgação dos conteúdos da EntreVozes. Esta página apresenta a iniciativa, sua proposta, seus profissionais colaboradores e seus canais oficiais de comunicação.</p>
-        <a class="button button-spotify" data-spotify aria-disabled="true" tabindex="-1">ACOMPANHE NO SPOTIFY <span>↗</span></a>
-        
+    <section class="listen-spotify" id="onde-ouvir">
+      <div class="spotify-inner section-pad">
+        <div class="spotify-brand" aria-hidden="true"><span class="spotify-mark">◖</span><span>ENTREVOZES<br>NO SPOTIFY</span></div>
+        <div class="spotify-copy">
+          <div class="section-label"><span>NOS ACOMPANHE</span></div>
+          <h2>Acompanhe a EntreVozes <em>no Spotify.</em></h2>
+          <p>O Spotify é um dos canais de publicação e divulgação dos conteúdos da EntreVozes. Esta página apresenta a iniciativa, sua proposta, seus profissionais colaboradores e seus canais oficiais de comunicação.</p>
+          <a class="button button-spotify" data-spotify aria-disabled="true" tabindex="-1">ACOMPANHE NO SPOTIFY <span>↗</span></a>
+        </div>
+        <div class="spotify-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
-      <div class="spotify-art" aria-hidden="true"><span class="spotify-ring ring-a"></span><span class="spotify-ring ring-b"></span><span class="spotify-glyph">◖</span><span class="spotify-caption">ENTREVOZES<br>NO SPOTIFY</span></div>
     </section>
 
-    <section class="coordination section-pad" id="coordenacao">
-      <div class="section-label"><span>04</span><span>IDEALIZAÇÃO E COORDENAÇÃO</span></div>
-      <div class="coordination-layout">
-        <figure class="coordination-portrait">
-          <img src="assets/luiza-pim.png" alt="Luiza Pim, idealizadora e coordenadora da EntreVozes." loading="lazy" width="1298" height="1212">
-        </figure>
-        <div class="coordination-copy">
-          <h3>Luiza Pim</h3>
-          <p class="coordination-role">Idealizadora e coordenadora da EntreVozes.</p>
-          <p>Psicóloga e especialista em Terapia Cognitivo-Comportamental, Luiza Pim é a idealizadora e coordenadora da EntreVozes.</p>
-          <p>O projeto nasceu de uma reflexão pessoal e profissional diante de situações observadas no contexto da saúde, especialmente em relação às divergências entre profissionais, à fragmentação dos diálogos e à necessidade de fortalecer uma cultura de respeito, colaboração e responsabilidade.</p>
-          <p>A partir dessa percepção, surgiu a iniciativa de construir um espaço que valorizasse o conhecimento, a troca de experiências e o diálogo entre diferentes profissionais e perspectivas.</p>
-          <p>A EntreVozes representa, assim, uma proposta de aproximação, na qual o conhecimento não deve ser motivo de disputas, mas uma oportunidade de construção coletiva. Um espaço dedicado à informação, à reflexão e à valorização das diferentes contribuições profissionais.</p>
+    <section class="people section-pad" aria-label="Idealização e coordenação">
+      <div class="section-label"><span>IDEALIZAÇÃO E COORDENAÇÃO</span></div>
+      <div class="people-layout">
+        <div class="coordinator" id="coordenacao">
+          <figure class="coordination-portrait">
+            <img src="assets/luiza-pim.png" alt="Luiza Pim, idealizadora e coordenadora da EntreVozes." loading="lazy" width="1298" height="1212">
+          </figure>
+          <div class="coordination-copy">
+            <h2>Luiza Pim</h2>
+            <p class="coordination-role">Idealizadora e coordenadora da EntreVozes.</p>
+            <p>Psicóloga e especialista em Terapia Cognitivo-Comportamental, Luiza Pim é a idealizadora e coordenadora da EntreVozes.</p>
+            <p>O projeto nasceu de uma reflexão pessoal e profissional diante de situações observadas no contexto da saúde, especialmente em relação às divergências entre profissionais, à fragmentação dos diálogos e à necessidade de fortalecer uma cultura de respeito, colaboração e responsabilidade.</p>
+            <p>A partir dessa percepção, surgiu a iniciativa de construir um espaço que valorizasse o conhecimento, a troca de experiências e o diálogo entre diferentes profissionais e perspectivas.</p>
+            <p>A EntreVozes representa, assim, uma proposta de aproximação, na qual o conhecimento não deve ser motivo de disputas, mas uma oportunidade de construção coletiva. Um espaço dedicado à informação, à reflexão e à valorização das diferentes contribuições profissionais.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="guests section-pad" id="convidados">
-      <div class="section-label"><span>05</span><span>PROFISSIONAIS COLABORADORES</span></div>
+      <div class="section-label"><span>PROFISSIONAIS COLABORADORES</span></div>
       <div class="guests-layout">
-        <h2>Psicologia em diálogo <em>com a sociedade.</em></h2>
-        <div class="guests-copy">
-          <p>A EntreVozes valoriza a formação, a experiência e a responsabilidade ética de psicólogos na divulgação de conhecimentos psicológicos.</p>
-          <p>O diálogo entre diferentes perspectivas aproxima a informação psicológica das questões que atravessam a vida cotidiana e amplia a compreensão das experiências humanas.</p>
-          
-        </div>
-      </div>
-      <div class="professional-group" aria-labelledby="psychologists-heading">
-        <h3 class="professional-heading" id="psychologists-heading">PSICÓLOGOS</h3>
-        <ul class="professional-list" aria-label="Psicólogas e psicólogos colaboradores da EntreVozes">
-          <li><strong>Amanda Aleluia</strong></li>
-          <li><strong>Amanda Rêgo</strong></li>
-          <li><strong>Cristiane Morgado</strong></li>
-          <li><strong>Denner Polizelli</strong></li>
-          <li><strong>Erislene Moreira</strong></li>
-          <li><strong>Marina Matioli</strong></li>
-          <li><strong>Thales Xatara</strong></li>
-          <li><strong>Jeferson Campos</strong></li>
-          <li><strong>Patrícia Nascimento</strong></li>
-          <li><strong>Susana Aparecida</strong></li>
-          <li><strong>Laiana Leal Ibiapina</strong></li>
-          <li><strong>Elis Calado</strong></li>
-          <li><strong>Bia Alencar</strong></li>
-          <li><strong>Ana Carolina</strong></li>
-        </ul>
-      </div>
-      <div class="professional-group professional-group--fitness" aria-labelledby="fitness-heading">
-        <h3 class="professional-heading" id="fitness-heading">EDUCAÇÃO FÍSICA</h3>
-        <ul class="professional-list" aria-label="Profissional de Educação Física colaboradora da EntreVozes">
-          <li><strong>Graziele Oliveira</strong></li>
-        </ul>
+          <div class="guests-intro">
+            <h2>Psicologia em diálogo <em>com a sociedade.</em></h2>
+            <p>A EntreVozes valoriza a formação, a experiência e a responsabilidade ética de psicólogos na divulgação de conhecimentos psicológicos.</p>
+            <p>O diálogo entre diferentes perspectivas aproxima a informação psicológica das questões que atravessam a vida cotidiana e amplia a compreensão das experiências humanas.</p>
+          </div>
+          <div class="professionals-column">
+          <div class="professional-group" aria-labelledby="psychologists-heading">
+            <h3 class="professional-heading" id="psychologists-heading">PSICÓLOGOS</h3>
+            <ul class="professional-list" aria-label="Psicólogas e psicólogos colaboradores da EntreVozes">
+              <li><strong>Amanda Aleluia</strong></li><li><strong>Amanda Rêgo</strong></li>
+              <li><strong>Cristiane Morgado</strong></li><li><strong>Denner Polizelli</strong></li>
+              <li><strong>Erislene Moreira</strong></li><li><strong>Marina Matioli</strong></li>
+              <li><strong>Thales Xatara</strong></li><li><strong>Jeferson Campos</strong></li>
+              <li><strong>Patrícia Nascimento</strong></li><li><strong>Susana Aparecida</strong></li>
+              <li><strong>Laiana Leal Ibiapina</strong></li><li><strong>Elis Calado</strong></li>
+              <li><strong>Bia Alencar</strong></li><li><strong>Ana Carolina</strong></li>
+            </ul>
+          </div>
+          <div class="professional-group professional-group--fitness" aria-labelledby="fitness-heading">
+            <h3 class="professional-heading" id="fitness-heading">EDUCAÇÃO FÍSICA</h3>
+            <ul class="professional-list" aria-label="Profissional de Educação Física colaboradora da EntreVozes"><li><strong>Graziele Oliveira</strong></li></ul>
+          </div>
+          </div>
       </div>
     </section>
 
     <section class="collab section-pad" id="psicologos">
-      <div class="section-label"><span>06</span><span>PARA PSICÓLOGOS</span></div>
-      <div class="collab-layout">
-        <h2>A contribuição profissional amplia <em>o diálogo com a sociedade.</em></h2>
-        <div class="collab-body">
-          <p>A EntreVozes promove o compartilhamento de conhecimentos psicológicos e conteúdos educativos, contribuindo para ampliar o acesso da sociedade à informação de qualidade.</p>
-          <p>Valorizamos a formação, a experiência e a contribuição de cada profissional. Se essa proposta dialoga com sua atuação, entre em contato para conhecer as possibilidades de colaboração editorial.</p>
-          <a class="button button-gold" href="https://wa.me/17981818888?text=Ol%C3%A1%21%20Conheci%20a%20EntreVozes%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20possibilidade%20de%20participar%20do%20projeto." target="_blank" rel="noopener noreferrer">QUERO PARTICIPAR <span>↗</span></a>
+      <div class="collab-inner">
+        <div class="section-label"><span>PARA PSICÓLOGOS</span></div>
+        <div class="collab-layout">
+          <h2>A contribuição profissional amplia <em>o diálogo com a sociedade.</em></h2>
+          <div class="collab-body">
+            <p>A EntreVozes promove o compartilhamento de conhecimentos psicológicos e conteúdos educativos, contribuindo para ampliar o acesso da sociedade à informação de qualidade.</p>
+            <p>Valorizamos a formação, a experiência e a contribuição de cada profissional. Se essa proposta dialoga com sua atuação, entre em contato para conhecer as possibilidades de colaboração editorial.</p>
+            <a class="button button-gold" href="https://wa.me/17981818888?text=Ol%C3%A1%21%20Conheci%20a%20EntreVozes%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20possibilidade%20de%20participar%20do%20projeto." target="_blank" rel="noopener noreferrer">QUERO PARTICIPAR <span>↗</span></a>
+          </div>
         </div>
+        <div class="collab-decoration" aria-hidden="true">EV</div>
       </div>
-      <div class="collab-decoration" aria-hidden="true">EV</div>
     </section>
 
     <section class="team-contact section-pad" aria-labelledby="team-contact-title">
@@ -153,13 +169,8 @@
           <p class="team-contact-handle">Instagram: <a href="https://www.instagram.com/psi.entrevozes/" target="_blank" rel="noopener noreferrer">@psi.entrevozes</a></p>
         </div>
         <a class="instagram-button" href="https://www.instagram.com/psi.entrevozes/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o perfil da EntreVozes no Instagram, abre em uma nova aba">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-            <circle cx="12" cy="12" r="4"></circle>
-            <circle class="instagram-icon-dot" cx="17.5" cy="6.5" r=".8"></circle>
-          </svg>
-          <span>ACESSAR INSTAGRAM</span>
-          <span class="instagram-arrow" aria-hidden="true">↗</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="instagram-icon-dot" cx="17.5" cy="6.5" r=".8"></circle></svg>
+          <span>ACESSAR INSTAGRAM</span><span class="instagram-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
@@ -170,7 +181,6 @@
         <h2>Conhecimento que aproxima. <em>Conexões que ampliam.</em></h2>
         <p>Para saber mais sobre a EntreVozes ou manifestar interesse em uma colaboração editorial, fale conosco.</p>
         <a class="button button-outline" data-whatsapp href="#contato">FALE PELO WHATSAPP <span>↗</span></a>
-        
       </div>
       <div class="contact-spark" aria-hidden="true">✳</div>
     </section>
@@ -180,6 +190,10 @@
     <a class="wordmark footer-brand" href="#inicio"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>ENTRE<span>VOZES</span></a>
     <p>Psicologia, educação e compromisso com a sociedade.</p>
     <p class="disclaimer">Conteúdos de caráter educativo e informativo. Não substituem acompanhamento psicológico individualizado.</p>
+    <div class="footer-links" aria-label="Canais oficiais">
+      <a href="https://www.instagram.com/psi.entrevozes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram EntreVozes"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r=".8"></circle></svg></a>
+      <a data-whatsapp href="#contato" aria-label="WhatsApp EntreVozes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 8.5c.5 2 2 3.5 4.5 4.5l1-1 2 1c-.2 1.5-1.5 2.5-3 2.2-3.8-.8-6.6-3.6-7.2-7.1C6 6.8 7 5.5 8.5 5.4l1 2.1-.5 1Z"></path></svg></a>
+    </div>
     <span class="copyright">© ENTREVOZES</span>
   </footer>
 </body>
