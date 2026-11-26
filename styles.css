@@ -40,7 +40,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; border-ra
 .hero-photo, .hero-shade { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; }
 .hero-photo { object-fit: cover; object-position: center 54%; filter: grayscale(1) brightness(.58) contrast(1.05); }
 .hero-shade { z-index: -1; background: linear-gradient(90deg, var(--bg) 0%, rgba(23,24,23,.94) 23%, rgba(23,24,23,.72) 48%, rgba(23,24,23,.34) 100%), linear-gradient(0deg, rgba(23,24,23,.72), transparent 33%, rgba(23,24,23,.12)); }
-.hero::after { position: absolute; z-index: -1; top: 12%; right: -16%; width: min(72vw, 1050px); aspect-ratio: 1; border: 1px solid rgba(201,173,122,.42); border-radius: 50%; content: ''; pointer-events: none; }
+.hero::after { display: none; }
 .hero-text { position: relative; z-index: 1; width: min(55%, 680px); padding-top: 18px; animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0; color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .21em; line-height: 1.65; }
 h1, h2 { margin: 24px 0; font-family: var(--serif); font-weight: 500; letter-spacing: -.035em; line-height: .99; text-wrap: balance; }
